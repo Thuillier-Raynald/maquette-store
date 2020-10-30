@@ -14,7 +14,7 @@ body {
 }
 
 /*----------Header----------*/
-nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +28,9 @@ nav {
     z-index: 9;
 }
 
+aside {
+    display: none;
+}
 
 /*----------Main----------*/
 main {
@@ -167,7 +170,7 @@ form {
 
 h3 {
     font-weight: 400;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .contact p {
@@ -195,7 +198,10 @@ h3 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    height: 5rem;
+}
+
+.about--details a {
+    margin: .4rem;
 }
 
 .about h3 {
@@ -221,15 +227,15 @@ a {
 
 .store--accept p {
     font-size: .8rem;
-    padding: .3rem;
+    padding: .3rem 0;
 }
 
 .store--accept i {
-    padding: .2rem;
+    padding: 0 .2rem 0 0;
 }
 
 .social {
-    padding: 1rem .2rem 1rem .3rem;
+    padding: 1rem .2rem 1rem 0;
 }
 
 .social i {
@@ -245,4 +251,75 @@ footer {
     font-size: .8rem;
     font-weight: 400;
     padding: 1rem 0 2rem 0;
+}
+
+@media screen and (min-width: 576px) {
+
+    body {
+        
+    }
+
+    .nav {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    main {
+        padding-top: 0;
+    }
+
+    .info--products {
+        height: 20rem;
+    }
+
+    .info--products h2 {
+        display: block;
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+
+    .info--products h1 {
+        font-size: 3rem;
+    }
+
+    figure {
+        width: 25%;
+    }
+    
+    figure:nth-child(2n+1) {
+        padding: 0 .5rem 0 1rem;
+    }
+    
+    figure:nth-child(2n+0) {
+        padding: 0 .5rem 0 1rem;
+    }
+
+    .infos {
+        display: flex;
+    }
+
+    .contact,
+    .about,
+    .store--accept {
+        width: calc(100%/3);
+    }
+
+    .store--accept {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 1rem;
+    }
+
+    .store--accept h3 {
+        text-align: left;
+    }
+
+    .about h3 {
+        margin: 0;
+    }
+
 }
