@@ -9,11 +9,6 @@
     src: url("../fonts/Montserrat-Regular.ttf");
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Regular.ttf");
-}
-
 body {
     font-family: "Montserrat";
 }
@@ -30,6 +25,7 @@ nav {
     font-size: 1.8rem;
     color: #FFF;
     padding: 0 1rem;
+    z-index: 9;
 }
 
 
@@ -41,6 +37,10 @@ main {
 #product {
     width: 90%;
     margin: auto;
+}
+
+#product > p {
+    padding: 1rem 0;
 }
 
 .category--caddy--search {
@@ -95,6 +95,11 @@ figure {
     position: relative;
 }
 
+figure p {
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
 figure:nth-child(2n+1) {
     padding: 0 .5rem 0 0;
 }
@@ -110,6 +115,7 @@ figure img {
 .etiquette {
     position: absolute;
     color: #FFF;
+    font-size: .8rem;
     background-color: #000;
     padding: .2rem;
 }
@@ -119,7 +125,7 @@ figure img {
     margin: auto;
     background-color: #000;
     color: #FFF;
-    padding: 2rem .5rem;
+    padding: 1.5rem .5rem;
 }
 
 .subscribe h2 {
@@ -139,6 +145,104 @@ form {
 
 .subscribe input {
     padding: .5rem;
-    margin: .5rem 0;
+    margin-top: .5rem;
 }
 
+.subscribe input:nth-child(2) {
+    color: #FFF;
+    background-color: red;
+    border: none;
+    width: 5rem;
+}
+
+.infos {
+    background-color: #F1F1F1;
+    width: 90%;
+    margin: auto;
+}
+
+.contact {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    padding: 1rem;
+}
+
+.contact p {
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}
+
+.formContact {
+    padding: 0 1rem;
+}
+
+.formContact input,
+.formContact textarea {
+    padding: .6rem .4rem;
+    margin: .4rem;
+}
+
+.formContact input:nth-child(5) {
+    background-color: #000;
+    color: #FFF;
+    border: none;
+}
+
+.about--details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 5rem;
+}
+
+.about h3 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+a {
+    color: #000;
+    font-size: .8rem;
+    width: 25%;
+    text-align: center;
+}
+
+.store--accept {
+    display: flex;
+    justify-content: space-around;
+}
+
+.store--accept h3 {
+    text-align: center;
+}
+
+.store--accept p {
+    font-size: .8rem;
+    padding: .3rem;
+}
+
+.store--accept i {
+    padding: .2rem;
+}
+
+.social {
+    padding: 1rem .2rem 1rem .3rem;
+}
+
+.social i {
+    padding: 0;
+}
+
+
+/*----------Footer----------*/
+footer {
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 1rem 0 2rem 0;
+}
